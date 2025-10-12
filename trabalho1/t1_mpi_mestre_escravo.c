@@ -62,7 +62,7 @@ int main(int argc, char *argv[]) {
         MPI_Recv(&inicio, 1, MPI_INT, 0, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
         MPI_Recv(&fim, 1, MPI_INT, 0, 2, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
-        printf("i %d f %d \n", inicio, fim);
+        //printf("i %d f %d \n", inicio, fim);
         
         for(x=inicio;x<fim;x++){
             soma_local = soma_local + vet[x];
